@@ -41,9 +41,9 @@ class App extends Component {
   // api 서버에 접근을 해서 데이터를 받아오는 함수 컴포넌트디드마운트
   componentDidMount() {
     this.timer = setInterval(this.progress, 20);
-    // this.callApi()
-    //   .then(res => this.setState({customers: res}))
-    //   .catch(err => console.log(err));
+    this.callApi()
+      .then(res => this.setState({customers: res}))
+      .catch(err => console.log(err));
   }
 
 
